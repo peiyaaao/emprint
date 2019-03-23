@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         final Button signUpButton = findViewById(R.id.signUpButton);
         signUpButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                openParaLogin();
+                openSignUp();
             }
         });
 
@@ -42,9 +42,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openParaLogin()
+    public void openSignUp()
     {
-        Intent intent2 = new Intent(this, ParaLogin.class);
+        Intent intent2 = new Intent(this, SignUp.class);
         startActivity(intent2);
     }
 }
