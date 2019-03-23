@@ -8,7 +8,7 @@ public class FindPatient extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_FindPatient);
+        setContentView(R.layout.activity_findpatient);
 
     }
 }
