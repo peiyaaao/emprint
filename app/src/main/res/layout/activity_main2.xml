@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SecondLogin">
+    tools:context=".SecondLogin"
+    android:background="#C5E3ED">
 
 
     <ImageButton
-        android:id="@+id/img"
-        android:layout_width="194dp"
+        android:id="@+id/provider"
+        android:layout_width="263dp"
         android:layout_height="195dp"
         android:layout_alignParentLeft="true"
         android:layout_marginStart="8dp"
@@ -21,17 +22,17 @@
         android:maxWidth="100dp"
         android:maxHeight="100dp"
         android:scaleType="fitCenter"
-        android:src="@drawable/ambulance"
+        android:src="@drawable/provider"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img2"
+        app:layout_constraintTop_toBottomOf="@+id/patient"
         app:layout_constraintVertical_bias="0.081" />
 
     <ImageButton
-        android:id="@+id/img2"
-        android:layout_width="193dp"
-        android:layout_height="179dp"
+        android:id="@+id/patient"
+        android:layout_width="269dp"
+        android:layout_height="178dp"
         android:layout_alignParentLeft="true"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -41,19 +42,16 @@
         android:maxWidth="100dp"
         android:maxHeight="100dp"
         android:scaleType="fitXY"
-        android:src="@drawable/person"
+        android:src="@drawable/patient"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="194dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@android:color/transparent"
+        android:layout_width="206dp"
+        android:layout_height="64dp"
+        android:background="#FFFFFFFF"
         android:text="Log In"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -63,11 +61,9 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="182dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@android:color/transparent"
+        android:layout_width="196dp"
+        android:layout_height="64dp"
+        android:background="#FFFFFFFF"
         android:text="Sign Up"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
