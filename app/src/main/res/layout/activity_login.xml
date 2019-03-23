@@ -12,22 +12,28 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_centerInParent="true">
-        <EditText
-            android:layout_width="match_parent"
+
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="UserName"
-            android:id="@+id/username"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="password"
-            android:id="@+id/password"
-            android:inputType="textPassword"
+            android:text="Paramedic"
             />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="HealthCare Provider Code"
+            android:id="@+id/username"/>
+        <!--<EditText-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:hint="password"-->
+        <!--android:id="@+id/password"-->
+        <!--android:inputType="textPassword"-->
+        <!--/>-->
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login"
+            android:text="Next >"
             android:background="#3f76ff"
             android:textColor="#fff"
             android:id="@+id/login"/>
