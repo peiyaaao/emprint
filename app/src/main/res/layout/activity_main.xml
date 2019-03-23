@@ -26,7 +26,6 @@
         android:layout_marginStart="24dp"
         android:layout_marginBottom="64dp"
         android:text="Login"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -36,7 +35,7 @@
         android:layout_height="75dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="64dp"
-        android:text="signUp"
+        android:text="Sign Up"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 </android.support.constraint.ConstraintLayout>
