@@ -4,8 +4,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-<<<<<<< Updated upstream
-
 import android.widget.TextView;
 import android.app.KeyguardManager;
 import android.content.pm.PackageManager;
@@ -32,8 +30,6 @@ import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
 import javax.crypto.NoSuchPaddingException;
 import javax.crypto.SecretKey;
-=======
->>>>>>> Stashed changes
 
 public class MainActivity extends AppCompatActivity {
     @Override
