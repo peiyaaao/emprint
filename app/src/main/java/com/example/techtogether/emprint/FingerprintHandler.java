@@ -18,6 +18,7 @@ public class FingerprintHandler extends FingerprintManager.AuthenticationCallbac
     private CancellationSignal cancellationSignal;
     private Context context;
     private FingerprintManager fingerprintManager;
+    private boolean check=false;
 
     public FingerprintHandler(Context mContext) {
         context = mContext;
@@ -42,7 +43,8 @@ public class FingerprintHandler extends FingerprintManager.AuthenticationCallbac
         //I’m going to display the results of fingerprint authentication as a series of toasts.
         //Here, I’m creating the message that’ll be displayed if an error occurs//
 
-        Toast.makeText(context, "Authentication error\n" + errString, Toast.LENGTH_LONG).show();
+      //  Toast.makeText(context, "Authentication error\n" + errString, Toast.LENGTH_LONG).show();
+        cancellationSignal.cancel();
     }
 
     @Override
@@ -52,6 +54,7 @@ public class FingerprintHandler extends FingerprintManager.AuthenticationCallbac
     public void onAuthenticationFailed() {
         Toast.makeText(context, "Authentication failed", Toast.LENGTH_LONG).show();
         cancellationSignal.cancel();
+
     }
 
     @Override
@@ -67,6 +70,13 @@ public class FingerprintHandler extends FingerprintManager.AuthenticationCallbac
             FingerprintManager.AuthenticationResult result) {
 
         Toast.makeText(context, "Success!", Toast.LENGTH_LONG).show();
+        check=true;
+
+    }
+
+    public boolean isSuccess()
+    {
+        return check;
     }
     public void setFingerprintManager (FingerprintManager fm)
     {
