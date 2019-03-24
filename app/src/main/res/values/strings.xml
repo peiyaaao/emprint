@@ -19,5 +19,5 @@
     <!--Patient Sign Up Strings-->
     <string name="patient_signup_title">Patient</string>
     <string name="insurance_placeholder">Select Insurance Company</string>
-    <string name="manual_button">Fill in Manually > </string>
+    <string name="manual_button">Fill in Manually  > </string>
 </resources>
