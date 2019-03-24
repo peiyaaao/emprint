@@ -15,22 +15,33 @@ public class SecondLogin extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
 
         final ImageButton healthcareprovider = findViewById(R.id.provider);
-        healthcareprovider.setOnClickListener(new View.OnClickListener(){
+        healthcareprovider.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v){
-                Intent intent = new Intent(this, HealthCareProvider.class);
-                startActivity(intent);
+            public void onClick(View v) {
+                openParaLogin();
             }
         });
 
         final ImageButton patient = findViewById(R.id.patient);
-        patient.setOnClickListener(new View.OnClickListener(){
+        patient.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v){
-                Intent intent = new Intent(this, Patient.class);
-                startActivity(intent);
+            public void onClick(View v) {
+                openPatientLogin();
             }
         });
 
+    }
+
+    public void openParaLogin() {
+
+
+    Intent intent = new Intent(this, ParaLogin.class);
+
+    startActivity(intent);
+    }
+
+    public void openPatientLogin() {
+        Intent intent2 = new Intent(this, PatientLogin.class);
+        startActivity(intent2 );
     }
 }

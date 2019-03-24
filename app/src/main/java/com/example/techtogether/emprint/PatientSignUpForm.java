@@ -1,5 +1,6 @@
 package com.example.techtogether.emprint;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -18,22 +19,22 @@ public class PatientSignUpForm extends AppCompatActivity {
     private EditText state;
     private EditText zipCode;
     private EditText country;
-    private EditText license1;
-    private EditText license2;
+    private EditText license;
     private EditText birthday;
     private DatabaseReference mDatabase;
-    private Button nextButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_patient_sign_up_form);
         mDatabase = FirebaseDatabase.getInstance().getReference();
-        nextButton = findViewById(R.id.next_button);
+
+
+        final Button nextButton = findViewById(R.id.next_button);
         nextButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                writeFormDetails();
+            public void onClick(View v) {
+                openEmergencyContact();
             }
         });
     }
@@ -46,8 +47,7 @@ public class PatientSignUpForm extends AppCompatActivity {
         state = findViewById(R.id.form_state);
         zipCode = findViewById(R.id.form_zipcode);
         country = findViewById(R.id.form_country);
-        license1 = findViewById(R.id.form_license);
-        license2 = findViewById(R.id.form_license2);
+        license = findViewById(R.id.form_license2);
         birthday = findViewById(R.id.form_birthday);
 
         mDatabase.child("users").child("1").child("fullName").setValue(fullName.getText().toString());
@@ -57,8 +57,13 @@ public class PatientSignUpForm extends AppCompatActivity {
         mDatabase.child("users").child("1").child("state").setValue(state.getText().toString());
         mDatabase.child("users").child("1").child("zipCode").setValue(zipCode.getText().toString());
         mDatabase.child("users").child("1").child("country").setValue(country.getText().toString());
-        mDatabase.child("users").child("1").child("license1").setValue(license1.getText().toString());
-        mDatabase.child("users").child("1").child("license2").setValue(license2.getText().toString());
+        mDatabase.child("users").child("1").child("license2").setValue(license.getText().toString());
         mDatabase.child("users").child("1").child("birthday").setValue(birthday.getText().toString());
+    }
+
+    public void openEmergencyContact()
+    {
+        Intent intent = new Intent(this, EmergencyContact.class);
+        startActivity(intent);
     }
  }

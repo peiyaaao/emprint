@@ -14,6 +14,9 @@ public class PatientSignUp extends AppCompatActivity {
         setContentView(R.layout.activity_patient_sign_up);
 
         this.setupButton();
+
+
+
     }
 
     void setupButton() {

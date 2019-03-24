@@ -97,7 +97,7 @@ public class PatientLogin extends AppCompatActivity {
     }
     private void openPersonData()
     {
-        Intent intent = new Intent(this, PersonData.class);
+        Intent intent = new Intent(this, PatientSignUp.class);
         startActivity(intent);
     }
 //Create the generateKey method that we’ll use to gain access to the Android keystore and generate the encryption key//

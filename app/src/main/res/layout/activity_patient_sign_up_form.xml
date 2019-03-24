@@ -195,21 +195,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="DRIVER LICENSE/STATE ID #"
-                    android:textColor="#d5e4e5"
-                    android:textSize="12dp" />
-
-                <EditText
-                    android:id="@+id/form-license"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:backgroundTint="#8fd2ce" />
-            </LinearLayout>
+                android:orientation="vertical"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
