@@ -37,7 +37,7 @@ public class FindPatient extends AppCompatActivity {
     private FingerprintManager.CryptoObject cryptoObject;
     private FingerprintManager fingerprintManager;
     private KeyguardManager keyguardManager;
-
+    private boolean check = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -90,16 +90,24 @@ public class FindPatient extends AppCompatActivity {
                     // for starting the authentication process (via the startAuth method) and processing the authentication process events//
                     FingerprintHandler helper = new FingerprintHandler(this);
                     helper.startAuth(fingerprintManager, cryptoObject);
+                    if (helper.isSuccess())
+                        openMainActivity();
+
                 }
             }
+
+
         }
-        openMainActivity();
+
     }
-private void openMainActivity()
-{
-    Intent intent = new Intent(this, SecondLogin.class);
-    startActivity(intent);
-}
+
+    private void openMainActivity()
+    {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+
+    }
+
 //Create the generateKey method that we’ll use to gain access to the Android keystore and generate the encryption key//
 
     private void generateKey() throws FingerprintException {
@@ -171,6 +179,7 @@ private void openMainActivity()
                 | NoSuchAlgorithmException | InvalidKeyException e) {
             throw new RuntimeException("Failed to init Cipher", e);
         }
+
     }
 
     private class FingerprintException extends Exception {
