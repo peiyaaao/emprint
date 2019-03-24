@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+<<<<<<< Updated upstream
 
 import android.widget.TextView;
 import android.app.KeyguardManager;
@@ -31,6 +32,8 @@ import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
 import javax.crypto.NoSuchPaddingException;
 import javax.crypto.SecretKey;
+=======
+>>>>>>> Stashed changes
 
 public class MainActivity extends AppCompatActivity {
     @Override
@@ -61,13 +64,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void openSecondLogin()
     {
-        Intent intent = new Intent(this, SecondLogin.class);
+        Intent intent = new Intent(this, PatientSignUp.class);
         startActivity(intent);
     }
 
     public void openSignUp()
     {
-        Intent intent2 = new Intent(this, SignUp.class);
+        Intent intent2 = new Intent(this, PatientSignUp.class);
         startActivity(intent2);
     }
 }
