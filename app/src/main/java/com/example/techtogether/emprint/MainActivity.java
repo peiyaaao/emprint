@@ -4,7 +4,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
 import android.widget.TextView;
 import android.app.KeyguardManager;
 import android.content.pm.PackageManager;
@@ -61,13 +60,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void openSecondLogin()
     {
-        Intent intent = new Intent(this, SecondLogin.class);
+        Intent intent = new Intent(this, PatientSignUp.class);
         startActivity(intent);
     }
 
     public void openSignUp()
     {
-        Intent intent2 = new Intent(this, SignUp.class);
+        Intent intent2 = new Intent(this, PatientSignUp.class);
         startActivity(intent2);
     }
 }

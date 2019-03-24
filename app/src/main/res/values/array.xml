@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="insuranceproviders">
+        <item>John Hancock</item>
+        <item>Cigna Health</item>
+        <item>Humana</item>
+        <item>Unitedhealth</item>
+    </string-array>
+</resources>
