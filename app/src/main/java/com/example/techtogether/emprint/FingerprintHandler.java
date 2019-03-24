@@ -51,6 +51,7 @@ public class FingerprintHandler extends FingerprintManager.AuthenticationCallbac
 
     public void onAuthenticationFailed() {
         Toast.makeText(context, "Authentication failed", Toast.LENGTH_LONG).show();
+        cancellationSignal.cancel();
     }
 
     @Override

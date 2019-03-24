@@ -21,9 +21,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".PatientLogin"></activity>
-        <activity android:name=".SignUp" />
         <activity android:name=".PatientSignUp"></activity>
         <activity android:name=".PatientSignUpForm"></activity>
+        <activity android:name=".FindPatient"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -40,6 +40,7 @@
             android:name=".EmergencyContact"
             android:label="@string/title_activity_contact_info"
             android:theme="@style/AppTheme.NoActionBar" />
+
     </application>
 
 </manifest>
