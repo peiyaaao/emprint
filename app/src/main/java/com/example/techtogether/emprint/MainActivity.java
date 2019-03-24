@@ -60,13 +60,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void openSecondLogin()
     {
-        Intent intent = new Intent(this, PatientSignUp.class);
+        Intent intent = new Intent(this, SecondLogin.class);
         startActivity(intent);
     }
 
     public void openSignUp()
     {
-        Intent intent2 = new Intent(this, PatientSignUp.class);
+        Intent intent2 = new Intent(this, ParaLogin.class);
         startActivity(intent2);
     }
 }
