@@ -1,16 +1,19 @@
 package com.example.techtogether.emprint;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 
-public class PatientSignUp extends AppCompatActivity {
+public class PatientSignUp extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_patient_sign_up);
 
         this.setupButton();
