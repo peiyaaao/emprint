@@ -13,14 +13,11 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
-<<<<<<< Updated upstream
     <string name="title_activity_contact_info">ContactInfo</string>
     <string name="instructionsPatient">Scan your fingerprint</string>
-=======
 
     <!--Patient Sign Up Strings-->
     <string name="patient_signup_title">Patient</string>
     <string name="insurance_placeholder">Select Insurance Company</string>
     <string name="manual_button">Fill in Manually > </string>
->>>>>>> Stashed changes
 </resources>
